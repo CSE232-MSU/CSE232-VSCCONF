@@ -16,7 +16,9 @@ curl -o ~/.gdbinit https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/m
 
 ## macos
 
-Contains a launch.json and tasks.json file for C++ debugging on MacOS systems (`clang++`). Contains a single and multi-file configuration.
+Contains a launch.json, tasks.json, and c_cpp_properties.json file for C++ debugging on MacOS systems (`clang++`). Contains a single and multi-file configuration.
+
+c_cpp_properties.json is included to set VSCode's C++ linting version to C++ 17. The linter will not default to the latest C++ version on MacOS, for whatever reason.
 
 Execute the following commands one-by-one, after changing your directory to the folder where you want to debug some files:
 
