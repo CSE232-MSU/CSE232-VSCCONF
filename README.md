@@ -23,7 +23,7 @@ Execute the following commands one-by-one, after changing your directory to the 
 ```bash
 mkdir .vscode
 cd .vscode
-curl --remote-name-all https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/macos/{launch.json,tasks.json}
+curl --remote-name-all https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/macos/{launch.json,tasks.json,c_cpp_properties.json}
 cd ..
 ```
 
