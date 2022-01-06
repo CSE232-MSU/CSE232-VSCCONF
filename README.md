@@ -1,56 +1,45 @@
 # CSE232-VSCCONF
+
 Recommended VSCode configurations for C++ debugging in CSE 232
 
-## .gdbinit
+Downloading these files can be done using the given `curl` commands. The `curl` (or, "cURL") program is a command-line tool used to transfer data from network protocols. This GitHub repository is simply a host for these configuration files.
 
-This .gdbinit file skips over all STL code if a step-into is attempted. This is usually only a problem for Windows machines.
+## gdbinit
 
-This will automatically be downloaded to your home directory (where GDB looks for a .gdbinit file).
+This is a GDB configuration file that skips over all STL code if a step-into is attempted. This is usually only a problem for Windows machines.
+
+This will download the file to your home directory, and rename it to .gdbinit for GDB to discover.
 
 ```bash
-curl -o ~/.gdbinit https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/.gdbinit
+curl -o ~/.gdbinit https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/gdbinit
 ```
 
-## .vscode_macos
+## macos
 
 Contains a launch.json and tasks.json file for C++ debugging on MacOS systems (`clang++`). Contains a single and multi-file configuration.
 
-Navigate to the folder where you want to debug. Make a .vscode folder if one doesn't exist:
+Execute the following commands one-by-one, after changing your directory to the folder where you want to debug some files:
 
 ```bash
 mkdir .vscode
-```
-
-Change directory to the .vscode folder:
-
-```bash
 cd .vscode
+curl --remote-name-all https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/macos/{launch.json,tasks.json}
+cd ..
 ```
 
-Then use:
+This will create a .vscode folder if one doesn't exist, change directories to the .vscode folder, download the configuration files, and back out of the .vscode folder.
 
-```bash
-curl --remote-name-all https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/.vscode_macos/{launch.json,tasks.json}
-```
-
-## .vscode_windows
+## windows
 
 Contains a launch.json and tasks.json file for C++ debugging on Windows systems (`g++` with WSL). Contains a single and multi-file configuration.
 
-Navigate to the folder where you want to debug. Make a .vscode folder if one doesn't exist:
+Execute the following commands one-by-one, after changing your directory to the folder where you want to debug some files:
 
 ```bash
 mkdir .vscode
-```
-
-Change directory to the .vscode folder:
-
-```bash
 cd .vscode
+curl --remote-name-all https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/windows/{launch.json,tasks.json}
+cd ..
 ```
 
-Then use:
-
-```bash
-curl --remote-name-all https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/main/.vscode_windows/{launch.json,tasks.json}
-```
+This will create a .vscode folder if one doesn't exist, change directories to the .vscode folder, download the configuration files, and back out of the .vscode folder.
