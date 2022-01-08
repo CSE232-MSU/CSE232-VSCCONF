@@ -2,6 +2,8 @@
 
 Recommended VSCode configurations for C++ debugging in CSE 232
 
+Used by the CSE 232 website. [Repository for the website can be found here.](https://github.com/CSE232-MSU/CSE232)
+
 Downloading these files can be done using the given `curl` commands. The `curl` (or, "cURL") program is a command-line tool used to transfer data from network protocols. This GitHub repository is simply a host for these configuration files.
 
 ## gdbinit
