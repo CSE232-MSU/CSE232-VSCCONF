@@ -16,6 +16,8 @@ curl -o ~/.gdbinit https://raw.githubusercontent.com/CSE232-MSU/CSE232-VSCCONF/m
 
 ## macos
 
+**Important**: requires that you have the CodeLLDB extension made by Vadim Chugunov.
+
 Contains a launch.json, tasks.json, and c_cpp_properties.json file for C++ debugging on MacOS systems (`clang++`). Contains a single and multi-file configuration.
 
 c_cpp_properties.json is included to set VSCode's C++ linting version to C++ 17. The linter will not default to the latest C++ version on MacOS, for whatever reason.
