@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "C++ - Debug Single File",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/a.out",
             "args": [],
@@ -16,7 +16,7 @@
         },
         {
             "name": "C++ - Debug Multi File",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/a.out",
             "args": [],
