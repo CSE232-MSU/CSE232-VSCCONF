@@ -5,7 +5,7 @@
             "label": "C++ - Debug Single File",
             "command": "/usr/bin/clang++",
             "args": [
-                "-std=c++17",
+                "-std=c++20",
                 "-stdlib=libc++",
                 "-g",
                 "-Wall",
@@ -29,7 +29,7 @@
             "label": "C++ - Debug Multi File",
             "command": "/usr/bin/clang++",
             "args": [
-                "-std=c++17",
+                "-std=c++20",
                 "-stdlib=libc++",
                 "-g",
                 "-Wall",
